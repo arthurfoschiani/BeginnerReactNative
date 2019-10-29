@@ -1,11 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React, {Fragment} from 'react';
 import {
   SafeAreaView,
@@ -27,7 +19,7 @@ import {
 const App = () => {
   return (
     <Fragment>
-      <StatusBar barStyle="blue-content" />
+      <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
@@ -39,10 +31,7 @@ const App = () => {
             </View>
           )}
           <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Hello World</Text>
-            </View>
-            <LearnMoreLinks />
+            <Text>Hello World</Text>
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -59,7 +48,7 @@ const styles = StyleSheet.create({
     right: 0,
   },
   body: {
-    backgroundColor: 'black',
+    backgroundColor: Colors.white,
   },
   sectionContainer: {
     marginTop: 32,
@@ -68,8 +57,7 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: 24,
     fontWeight: '600',
-    color: 'white',
-    backgroundColor: 'black'
+    color: Colors.black,
   },
   sectionDescription: {
     marginTop: 8,
